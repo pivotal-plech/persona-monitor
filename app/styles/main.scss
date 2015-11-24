@@ -1,0 +1,68 @@
+@import "components/header";
+@import "components/hero";
+@import "components/variables";
+
+.block {
+  display: block;
+}
+
+//Overides
+
+.dropdown-menu {
+  box-shadow: 0 2px 0 rgba(211,217,217,0.5);
+  border: none;
+  padding: 0 0;
+  border-radius: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 200px;
+  width: 100% !Important;
+  padding: 5px 0;
+  margin: 0;
+  list-style: none;
+  font-size: 16px;
+  text-align: left;
+  background-color: $dark-3;
+  border: none;
+  border-radius: none;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+  background-clip: padding-box;
+  li {
+   a {
+    padding: 12px 20px !important;
+    color: $dark-11 !important;
+    background-color: $dark-3 !important;
+    font-weight: normal;
+    transition: background-color 250ms linear;
+    &:hover {
+      background-color: $dark-2 !Important;
+    }
+    &:active, &:focus {
+      outline: none;
+    }
+   }
+  }
+}
+
+.dropdown {
+  display: block;
+  height: 100%;
+  padding: 0;
+}
+
+.dropdown-toggle.btn.btn-link {
+  height: 100%;
+  display: flex;
+  width: 100%;
+  text-align: left;
+  span {
+    flex: 1;
+  }
+  span:last-child {
+    text-align: right;
+  }
+}

@@ -1,0 +1,10 @@
+.dropdown {
+  display: block;
+  height: 100%;
+  padding: 0;
+}
+
+.dropdown-toggle {
+  height: 100%;
+  display: flex;
+}

@@ -1,0 +1,34 @@
+@import "variables";
+
+.header {
+  background-color: $dark-2;
+  display: flex;
+  align-items: center;
+  .logo, .main-nav {
+    flex: 1;
+  }
+}
+
+.hero {
+  background-color: $dark-1;
+}
+
+.logo {
+  max-width: 350px;
+}
+
+.product-nav {
+  flex: 1;
+  height: 50px;
+  line-height: 46px;
+  background-color: $dark-3;
+  button {
+    color: white !Important;
+    &:hover {
+      text-decoration: none;
+    }
+    &:active {
+      text-decoration: none;
+    }
+  }
+}
