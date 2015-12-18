@@ -1,5 +1,5 @@
 ---
 applications:
-- name: pui-react-prototyping
+- name: pivotal-personas
   mem: 500MB
   buildpack: https://github.com/cloudfoundry/staticfile-buildpack

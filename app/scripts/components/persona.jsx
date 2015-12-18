@@ -30,7 +30,6 @@ var Persona = React.createClass({
     this.bindAsObject(new Firebase("https://persona-monitor.firebaseio.com/personas/" + this.props.params.name), "persona");
   },
 
-
   render: function() {
     return (
       <div className="persona">
@@ -46,19 +45,22 @@ var Persona = React.createClass({
             <p>{this.state.persona.details.jobTitle}</p>
           </TileLayout.Item>
           <TileLayout.Item>
-            <h3>Demographics</h3>
+            <h3 className="title type-dark-1 em-low">Demographics</h3>
+            <hr />
             { this.state.persona.demographics.map(function(object, i){
               return <p>{object}</p>;
             })}
           </TileLayout.Item>
           <TileLayout.Item>
-            <h3>Behaviors / Activities</h3>
+            <h3 className="title type-dark-1 em-low">Behaviors / Activities</h3>
+            <hr />
             { this.state.persona.behaviors.map(function(object, i){
               return <p>{object}</p>;
             })}
           </TileLayout.Item>
           <TileLayout.Item>
-            <h3>Needs / Goals</h3>
+            <h3 className="title type-dark-1 em-low">Needs / Goals</h3>
+            <hr />
             { this.state.persona.needs.map(function(object, i){
               return <p>{object}</p>;
             })}

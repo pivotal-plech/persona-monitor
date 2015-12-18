@@ -21,19 +21,9 @@ var Header = React.createClass({
       <div className="header">
         <div className="logo">
           <Flag leftImage={Logo}>
-            <p className="type-dark-11 mvn h4">Pivotal <span className="em-high">UI React Prototyping</span></p>
+            <p className="type-dark-11 mvn h4">PCF <span className="em-high">Personas</span></p>
           </Flag>
         </div>
-        <nav className="main-nav prxl">
-          <InlineList className="mvn txt-r" spacing="l">
-            <ListItem>
-              <span className="type-dark-11">Downloads</span>
-            </ListItem>
-            <ListItem>
-              <span className="type-dark-11">Support</span>
-            </ListItem>
-          </InlineList>
-        </nav>
       </div>
     );
   }

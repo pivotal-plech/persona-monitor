@@ -143,7 +143,6 @@ gulp.task('bundle', function () {
     .pipe(assets.restore())
     .pipe($.useref())
     .pipe(jsFilter)
-    .pipe($.uglify())
     .pipe(jsFilter.restore())
     .pipe(cssFilter)
     .pipe($.minifyCss())
