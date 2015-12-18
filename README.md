@@ -1,33 +1,78 @@
-# Pivotal UI React Prototyping
+# Persona Monitor
 
-### First things first.
+## Problem Statement
 
-0. `npm i`
-0. Change the manifest application name from `pui-react-prototyping` to [the-name-of-your-app].
+Product, Engineering and Design at PCF are working together with the goal of helping the enterprise push apps to the cloud. As PCF has become larger we have more distributed teams collaborating.
 
-### To run locally
+It's difficult for distributed teams to share a common understanding of the human beings we're building for.
 
-0. `gulp serve`
+How might we improve the shared understanding of the mortal coil we're building for.
 
-* * *
+## Goals
 
-The framework is a fork of a [yeoman generator for react](https://www.npmjs.com/package/generator-react-reflux). To generate a new component:
+## Proto Personas (Meta Right?)
 
-0. `yo react-reflux:component product`
+We're building this product teams at PCF.
 
-### To build and push to pws
-Make sure you changed the name of your application in the manifest.yml. There is a Makefile in the root directory, so you can just run:
+### Pivotal Designer
+"I don't want to dig through google drive to share out artifacts"
 
-0. `make build`
+### Pain Points
+Having to explain what a persona is like 20 times a day
+Duplicating work across multiple products
 
-this will run the following commands
+### Goals
+Advocate for the right user
 
-```
-gulp build
-cd dist
-cf push
-cd ../
-```
+### Pivotal Engineer
+#### Quotes
+"we think that enterprise developers have this struggle, but we don't know"
+"I just want to do my job more effectively."
 
-### Firebase
-We're using firebase as a stubbed out hosted database. Currently, you can just BYO-JSON and import it into your own firebase. [This tutorial](https://www.firebase.com/blog/2015-07-15-reactfire-0-5-0.html) is a good resource for getting up and running with firebase. Firebase has great [documentation](https://www.firebase.com/docs/web/libraries/react/) for getting started and working with it's react mixin.
+#### Goals
+Push back on feature creep
+More effective ways of prioritizing features
+We keep accidentally gravitating to these peoples needs
+This user might be relevant over here
+This user is not relevant to us
+
+#### Pain points
+It's hard to prioritize features when there's an infinite requests coming through
+Feature requests. WTF.
+Product Team isn't empowered to tell people say no
+
+### Pivotal PM
+As a product manager 
+I want a way to link to a persona as a motivation for each 
+so that everyone shares the context of why we're building a feature
+
+#### Pain Points
+Team is constantly having to go to different resources
+
+#### Product Directors
+Assumptions
+
+#### Goals
+Consistent view of who we're building for across PCF
+
+---
+
+Tool to help align.
+Align stakeholders around a common set of users.
+Keep them aligned.
+Persistence
+
+We have observed that__.
+How might we improve __.
+
+Neckbeard Operator
+Neckbeard "Buddha" Operator
+
+Design Principles
+Shared Vocabulary
+Demystify Design
+
+Themes
+Alignment
+Broadcasting
+Profiling - TSA

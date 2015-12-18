@@ -5,12 +5,12 @@ var DefaultRoute = Router.DefaultRoute;
 
 var Layout = require('./components/layout');
 var Home = require('./components/home');
-var Product = require('./components/product/product');
+var Persona = require('./components/persona');
 
 var routes = (
   <Route name="layout" path="/" handler={Layout}>
-    <DefaultRoute handler={Home} />
-    <Route handler={Product} name="/product" />
+    <Route handler={Home} />
+    <Route handler={Persona} path="/persona/:name" component={Persona}/>
   </Route>
 );
 

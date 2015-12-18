@@ -12,7 +12,6 @@ var Layout = React.createClass({
       <div className="App">
         <Header />
         <RouteHandler />
-        <Footer />
       </div>
     );
   }

@@ -2,6 +2,10 @@
 @import "components/hero";
 @import "components/variables";
 
+body {
+  background: #FAFAFA;
+}
+
 .block {
   display: block;
 }
@@ -66,3 +70,88 @@
     text-align: right;
   }
 }
+
+.avatar {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  z-index: 15;
+
+  &.centered {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.persona-panel {
+  z-index: 0;
+  position: relative;
+
+}
+
+.persona-bg {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  width: 100%;
+  -webkit-filter: blur(1px);
+  opacity: .65;
+  background-image: url("http://fistfuloftalent.com/wp-content/uploads/2013/02/cube-farm.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+}
+
+.persona {
+  position: relative;
+
+  .persona-header {
+    height: 150px;
+    position: relative;
+  }
+
+  .persona-blur-bg {
+    background-image: url("http://fistfuloftalent.com/wp-content/uploads/2013/02/cube-farm.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    right: 0;
+    z-index: -1;
+  }
+
+  .avatar {
+    position: relative;
+  }
+
+  .tile-item {
+    background: #FAFAFA;
+    height: calc(50vh - 100px);
+    padding: 25px !important;
+    border-bottom: 1px solid darken(#FAFAFA, 15%);
+    display: block !important;
+
+    @media(min-width: $screen-sm-min) {
+      border-bottom: 0;
+
+      &:first-of-type, &:nth-of-type(2) {
+        border-bottom: 1px solid darken(#FAFAFA, 15%);
+      }
+
+
+      &:nth-of-type(odd) {
+        border-right: 1px solid darken(#FAFAFA, 15%);
+      }
+    }
+  }
+}
+
+
